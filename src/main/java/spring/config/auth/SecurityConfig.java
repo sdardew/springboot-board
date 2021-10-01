@@ -1,2 +1,5 @@
-package spring.config.auth;public class SecurityConfig {
+package spring.config.auth;
+
+public class SecurityConfig extends WebSecurity{
+
 }

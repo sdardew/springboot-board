@@ -38,12 +38,13 @@ public class OAuthAttributes {
                 .build();
     }
 
+    // User 엔티티 생성
     public User toEntity() {
         return User.builder()
                 .name(name)
                 .email(email)
                 .picture(picture)
-                .role(Role.GUEST)
+                .role(Role.GUEST) // 기본값은 GUEST
                 .build();
     }
 }
